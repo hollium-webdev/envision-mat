@@ -13,8 +13,10 @@ colorElements.forEach(color => {
     const countText = color.querySelector('p');
 
     decreaseButton.onclick = () => {
-        colorsCount[color.classList[1]] -= 1;
-        countText.textContent = colorsCount[color.classList[1]];
+        if (colorsCount[color.classList[1]] - 1 >= 0) {
+            colorsCount[color.classList[1]] -= 1;
+            countText.textContent = colorsCount[color.classList[1]];
+        }
     }
 
     increaseButton.onclick = () => {
