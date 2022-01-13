@@ -294,6 +294,10 @@ section {
   color: #FAFAFA;
 }
 
+.color button:hover {
+  cursor: pointer;
+}
+
 .color button:first-of-type {
   border-radius: 0.5vw 0 0 0.5vw;
 }
