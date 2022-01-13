@@ -82,7 +82,7 @@ section {
 
 .header .logo {
   color:var(--main-color);
-  font-size: 2.3rem;
+  height: 3vw;
 }
 
 .header .logo i {
@@ -327,7 +327,12 @@ input[type=number]::-webkit-outer-spin-button {
   font-size: 1.2vw;
 }
 
-@media screen and (max-width: 991px) {
+@media screen and (max-width: 1024px) {
+  .header .logo {
+    height: auto;
+    width: 40vw;
+  }
+
   .container {
     padding: 14vh 7vw 10vw;
   }
@@ -337,7 +342,7 @@ input[type=number]::-webkit-outer-spin-button {
     align-items: flex-start;
     margin-bottom: 13vw;
   }
-  
+
   .carousel {
     margin: 0;
   }
