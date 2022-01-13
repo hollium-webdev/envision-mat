@@ -266,13 +266,18 @@ section {
 
 .color-picker {
   display: flex;
+  flex-direction: column;
   margin: 2.89vw 0;
 }
 
 .color {
   display: flex;
   align-items: center;
-  margin-right: 2.5vw;
+  margin-bottom: 2vw;
+}
+
+.color:last-of-type {
+  margin-bottom: 0;
 }
 
 .color .icon {
@@ -282,14 +287,29 @@ section {
   margin-right: 0.8vw;
 }
 
-.color input {
+.color button {
+  font-size: 1vw;
+  padding: 0.7vw 1vw;
+  background-color: #363636;
+  color: #FAFAFA;
+}
+
+.color button:first-of-type {
+  border-radius: 0.5vw 0 0 0.5vw;
+}
+
+.color button:last-of-type {
+  border-radius: 0 0.5vw 0.5vw 0;
+}
+
+.color p {
   text-align: center;
-  font-size: 1.27vw;
-  padding: 1vw 1.2vw;
-  width: 4.2vw;
-  border-radius: 0.25vw;
+  font-size: 1vw;
+  padding: 0.7vw;
+  width: 3.5vw;
   border: 0.05vw solid #CBCBCB;
   background: transparent;
+  color: black;
 }
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -379,29 +399,43 @@ input[type=number]::-webkit-outer-spin-button {
   .payment a {
     align-self: center;
     padding: 2.5vw 6vw;
-    font-size: 4.5vw;
+    font-size: 5vw;
     border-radius: 1.5vw;
   }
   
   .color-picker {
-    margin: 6vw 0 10vw;
+    align-self: center;
+    margin: 6vw 0 12vw;
   }
   
   .color {
-    margin-right: 5vw;
+    margin-right: 0;
   }
   
   .color .icon {
     width: 8vw;
     height: 8vw;
-    margin-right: 3vw;
+    margin-right: 5vw;
+  }
+
+  .color button {
+    font-size: 5vw;
+    padding: 3vw 5vw;
+  }
+
+  .color button:first-of-type {
+    border-radius: 1.5vw 0 0 1.5vw;
   }
   
-  .color input {
-    font-size: 4vw;
-    padding: 2vw 4vw;
-    width: 12vw;
-    border-radius: 1.5vw;
+  .color button:last-of-type {
+    border-radius: 0 1.5vw 1.5vw 0;
+  }
+  
+  
+  .color p {
+    font-size: 5vw;
+    padding: 3vw 5vw;
+    width: 15vw;
   }
   
   .description h2 {
